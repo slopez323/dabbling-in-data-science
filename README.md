@@ -18,7 +18,7 @@ Now, create a canvas element somewhere in your HTML:
 
 `<canvas id="myChart" width="400" height="400"></canvas>`
 
-### 3. Wire it up with JS
+#### 3. Wire it up with JS
 
 Finally, add the following lines to your JS:
 
