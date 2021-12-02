@@ -92,7 +92,7 @@ Once you've decided on a statistic, move on to part 4.
 Now it's time for the hard part: calculating the statistic. You'll need to write code that calculates appropriate labels and data values for your statistic. If your statistic is the number of Dunkin Donuts in each state, your final results might look like:
 ```
   [ 'WA', 'OR', 'CA', 'MT', 'ID', ..., 'NY' ] // labels
-  [ 10, 4, 15, 3, 2, ..., 70 ]
+  [ 10, 4, 15, 3, 2, ..., 70 ]                // data
 ```
 
 ## Part 5: Displaying your statistic
