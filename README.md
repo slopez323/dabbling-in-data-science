@@ -68,15 +68,15 @@ If a chart is displaying, then you're good to go! Observe that customizing the n
 
 ## Part 2: Deciding on a real dataset
 
-Your task is now to choose a dataset from kaggle. Once you've chosen a dataset, your job will be to create three charts that display different pieces of information about your chosen dataset. You may choose any dataset from Kaggle but here are a few good ones:
+Your task is now to choose a dataset from [kaggle](https://www.kaggle.com/datasets?sort=usability&fileType=json). Once you've chosen a dataset, your job will be to create a chart that displays a piece of information about your chosen dataset. You may choose any dataset from kaggle; here are a few good ones:
 
 * [Dataset of all Nobel prize awards and laureates from 1901-2019](https://www.kaggle.com/imdevskp/nobel-prize)
 * [Information from all of the Dunkin Donuts stores in the US](https://www.kaggle.com/jpbulman/usa-dunkin-donuts-stores)
 * [NFL Football Player Stats](https://www.kaggle.com/zynicide/nfl-football-player-stats)
 
-You may also choose a dataset not listed here. If you do so, I reccomend using a JSON formatted dataset (using a CSV formatted is also possible but will be more difficult).
+_Note: if you choose your own dataset, try to get a dataset stored in a .json file. Many of them will be stored in .csv format. It's possible but more difficult to use these._
 
-Once you've decided on a dataset, download it (you may have to make an account to do this).
+Once you've decided on a dataset, download it (you will have to make a kaggle account to do this).
 
 ## Part 3: Analyzing the data
 
