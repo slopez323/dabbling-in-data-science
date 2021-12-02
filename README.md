@@ -2,6 +2,8 @@
 
 In this assignment we'll be downloading a real dataset from [kaggle](https://www.kaggle.com/datasets?sort=usability&fileType=json). Your job will be to create a chart visualization based on that data that will be displayed on the DOM using the `chartjs` library.
 
+Start out by creating an `index.html` and a `main.js` file.
+
 ## Part 1: Recall how to display a chart with `chartjs`
 
 To display a chart, we'll need to do three things:
