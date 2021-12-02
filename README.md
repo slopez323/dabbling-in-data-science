@@ -64,7 +64,7 @@ const myChart = new Chart(ctx, {
 
 ```
 
-If this is displaying, then you're good to go. You can see that customizing the numbers in the `data` array above changes the displayed values on the chart.
+If a chart is displaying, then you're good to go! Observe that customizing the numbers in the `data` array above changes the bar heights of the chart.
 
 ## Part 2: Deciding on a real dataset
 
