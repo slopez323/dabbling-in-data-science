@@ -4,9 +4,10 @@ async function getData(){
     let httpResponse = await fetch('dunkinDonuts.json');
     httpResponse = await httpResponse.json();
     let data = httpResponse.data;
-    console.log(data)
 
     let state = data.map(x => x.state);
+    let almond = data.filter(x => x.almond == "Y");
+    almond = almond.map(x => x.state);
 
     let storeCount = state.reduce((obj,item) => {
         if(!obj[item]){
@@ -16,11 +17,25 @@ async function getData(){
         return obj;
     }, {});
 
+    let almondCount = almond.reduce((obj,item) => {
+        if(!obj[item]){
+            obj[item] = 0;
+        }
+        obj[item]++;
+        return obj;
+    }, {});
+
+    let almondData = [];
+
+    for (let store in storeCount){
+        let y = almondCount[store] ? almondCount[store] : 0;
+        almondData.push(y);
+    };
+
     const myChart = new Chart(ctx, {
-        type: 'bar',
         data: {
-            labels: Object.keys(storeCount),
             datasets: [{
+                type: 'bar',
                 label: '# of Stores per State',
                 data: Object.values(storeCount),
                 backgroundColor: [
@@ -40,15 +55,13 @@ async function getData(){
                     'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 1
-            }]
+            }, {
+                type: 'line',
+                label: '# of Stores with Almond Milk',
+                data: almondData
+            }],
+            labels: Object.keys(storeCount),
         },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
     });
 }
 
